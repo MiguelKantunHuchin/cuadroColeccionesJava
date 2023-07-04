@@ -1,0 +1,88 @@
+
+body {
+    background-image: url('../Img/logoJava.png');
+    background-repeat: repeat;
+    background-size:10%;
+    background-position: 50px 50px; /* Espacio horizontal de 10px y vertical de 20px */
+    background-color: #f5f5f5;
+    background-blend-mode:color-dodge;
+    
+  }
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+/* Estilo de la tabla */
+.table-creativa {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Estilo de las celdas de encabezado */
+  .table-creativa th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo de las celdas de datos */
+  .table-creativa td {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo para resaltar las filas impares */
+  .table-creativa tr:nth-child(odd) td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo al pasar el mouse sobre una fila */
+  .table-creativa tr:hover td {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  #loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  body.loading {
+    overflow: hidden;
+  }
+  
+  #loader-container.loading {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  

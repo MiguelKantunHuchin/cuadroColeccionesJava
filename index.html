@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+    <link rel="icon" href="./Assets/Img/favicon_io/favicon-32x32.png">
+    <title>Colecciones Java</title>
+</head>
+<body>
+    <div id="loader-container">
+        <div id="loader"></div>
+    </div>
+    <h1>Tabla Comparativa</h1>
+    
+    <table class="table-creativa">
+      <tr>
+        <th>Set</th>
+        <th>List</th>
+        <th>Queue</th>
+        <th>Map</th>
+      </tr>
+      <tr>
+        <td>No permite elementos duplicados.</td>
+        <td>Permite elementos duplicados.</td>
+        <td>Representa una colección de elementos en la que el principio de inserción es diferente del principio de extracción.</td>
+        <td>Almacena pares de clave-valor.</td>
+      </tr>
+      <tr>
+        <td>No hay un orden específico garantizado para los elementos.</td>
+        <td>Mantiene el orden de inserción de los elementos.</td>
+        <td>Sigue la regla "FIFO" (First-In, First-Out).</td>
+        <td>No permite claves duplicadas, pero los valores pueden ser duplicados.</td>
+      </tr>
+      <tr>
+        <td>La interfaz Set tiene implementaciones comunes como <b>HashSet</b> y <b>TreeSet</b></td>
+        <td>La interfaz List tiene implementaciones comunes como <b>ArrayList</b> y <b>LinkedList.</b></td>
+        <td>La interfaz Queue tiene implementaciones comunes como <b>LinkedList</b> y <b>PriorityQueue</b></td>
+        <td>Permite acceder a los valores utilizando una clave única.</td>
+      </tr>
+      <tr>
+        <td>Se puede acceder a los elementos de un conjunto utilizando el método <b>contains()</b></td>
+        <td>Se puede acceder a los elementos de una lista utilizando índices.</td>
+        <td>Tamaño dinámico: Las colas en Java no tienen un tamaño fijo y pueden crecer dinámicamente a medida que se agregan elementos.
+        </td>
+        <td>La interfaz Map tiene implementaciones comunes como <b>HashMap</b> y <b>TreeMap</b></td>
+      </tr>
+      <tr>
+        <td>Algunos métodos comunes de Set incluyen <b>add()</b>, <b>remove()</b> y <b>size()</b></td>
+        <td>Algunos métodos comunes de List incluyen <b>add()</b>, <b>get()</b>, <b>remove()</b> y <b>size().</b></td>
+        <td>Algunos métodos comunes de Queue incluyen <b>add()</b>, <b>remove()</b>, <b>peek()</b> y <b>size()</b></td>
+        <td>Algunos métodos comunes de Map incluyen <b>put()</b>, <b>get()</b>, <b>remove()</b> y <b>size()</b></td>
+      </tr>
+      <!-- Agrega más filas según sea necesario -->
+    </table>
+
+
+    <script src="Assets/JS/script.js"></script>
+</body>
+</html>
